@@ -34,6 +34,11 @@ app.post("/test", (req, res) => {
   res.send("test success");
 });
 
+app.post("/testAgain", (req, res) => {
+  console.log(req.headers);
+  res.send("test success");
+});
+
 
 // app.post("/test", (req, res) => {
 //   const {ok} = req.body;
