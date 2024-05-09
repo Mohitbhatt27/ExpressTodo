@@ -18,6 +18,13 @@ app.get("/test", (req, res) => {
   console.log("test");
 })
 
+app.post("/test/:category/:id", (req, res) => {
+
+  const { category, id } = req.params;
+  console.log(category, id);
+  res.send("test success");
+})
+
 
 
 
